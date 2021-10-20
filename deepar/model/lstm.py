@@ -12,7 +12,6 @@ from tensorflow.keras import backend as K
 from tensorflow.keras import callbacks
 
 from deepar.model.loss import gaussian_likelihood
-from deepar.model import NNModel
 from deepar.model.layers import GaussianLayer
 from abc import ABC
 
