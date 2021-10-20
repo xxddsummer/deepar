@@ -1,11 +1,17 @@
-from deepar.dataset import Dataset
 import numpy as np
 import pandas as pd
 import logging
+from abc import ABC
 
 logger = logging.getLogger("deepar")
 
 
+class Dataset(ABC):
+    def __init__(self):
+        super().__init__()
+
+    def next_batch(self, **kwargs):
+        pass
 
 
 class MockTs(Dataset):
