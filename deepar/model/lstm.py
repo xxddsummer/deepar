@@ -14,9 +14,21 @@ from tensorflow.keras import callbacks
 from deepar.model.loss import gaussian_likelihood
 from deepar.model import NNModel
 from deepar.model.layers import GaussianLayer
+from abc import ABC
 
 
 logger = logging.getLogger(__name__)
+
+
+class NNModel(ABC):
+    def __init__(self):
+        super().__init__()
+
+    def net_structure(self, **kwargs):
+        pass
+
+    def instantiate_and_fit(self, **kwargs):
+        pass
 
 
 class DeepAR(NNModel):
