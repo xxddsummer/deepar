@@ -1,4 +1,5 @@
 from abc import ABC
+from time_series import *
 
 
 class Dataset(ABC):
